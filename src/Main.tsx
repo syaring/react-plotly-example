@@ -1,10 +1,10 @@
 import * as React from "react";
 import { App } from "./App";
-import { Hello } from "./components/Hello";
+import { PlotyExample } from "./components/PlotyExample";
 
 export interface IMainProps
 {
-    app: App;
+  app: App;
 }
 
 export class Main extends React.Component<IMainProps, {}>
@@ -18,7 +18,7 @@ export class Main extends React.Component<IMainProps, {}>
   {
     return (
       <>
-        <Hello name={this.props.app.appName} />
+        <PlotyExample />
       </>
     );
   }
